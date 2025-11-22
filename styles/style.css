@@ -27,15 +27,13 @@
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: relative;
   min-height: var(--header-min-height-desktop);
   padding-block: var(--header-padding-block);
   padding-inline: var(--header-padding-inline);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
   margin-block: 98px 97px;
   margin-inline: auto;
