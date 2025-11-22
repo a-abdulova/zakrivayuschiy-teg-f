@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
 
- 
-
   <body class="page">
     <header class="header">
       <div class="header__inner layout-width">
@@ -601,8 +599,8 @@
             </p>
 
             <p class="card__text">
-              Сейчас я уже намного увереннее чувствую себя в вёрстке, но всё
-              ещё ясно вижу, как много впереди. Мне нравится ощущать себя в
+              Сейчас я уже намного увереннее чувствую себя в вёрстке, но всё ещё
+              ясно вижу, как много впереди. Мне нравится ощущать себя в
               процессе: учусь не только писать код, но и принимать то, что путь
               длинный, а расти — нормально и даже приятно.
             </p>
@@ -657,49 +655,49 @@
         </article>
       </section>
     </main>
-    
-  
 
-<footer class="footer">
-  <div class="footer__inner layout-width">
-    <button
-      class="footer__button"
-      type="button"
-      onclick="window['diskette-dialog'].showModal()"
-      aria-controls="diskette-dialog"
-    >
-      <svg class="footer__icon" width="39" height="39" viewBox="0 0 39 39">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
-  </div>
-
-   <dialog class="diskette-dialog" id="diskette-dialog">
-    <form method="dialog" class="diskette-dialog__form">
-      <div class="diskette-dialog__row">
-        <div class="diskette-dialog__icon-cell">
-          <svg
-            class="diskette-dialog__icon"
-            width="39"
-            height="39"
-            viewBox="0 0 39 39"
-            aria-hidden="true"
-          >
+    <footer class="footer">
+      <div class="footer__inner layout-width">
+        <button
+          class="footer__button"
+          type="button"
+          onclick="window['diskette-dialog'].showModal()"
+          aria-controls="diskette-dialog"
+        >
+          <svg class="footer__icon" width="39" height="39" viewBox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-        </div>
-
-        <p class="diskette-dialog__text">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</p>
+          <span class="button__text">Сохранить на память</span>
+        </button>
       </div>
 
-      <button class="diskette-dialog__button" type="submit">
-        <span class="button__text">OK</span>
-      </button>
-    </form>
-  </dialog>
+      <dialog class="diskette-dialog" id="diskette-dialog">
+        <form method="dialog" class="diskette-dialog__form">
+          <div class="diskette-dialog__row">
+            <div class="diskette-dialog__icon-cell">
+              <svg
+                class="diskette-dialog__icon"
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                aria-hidden="true"
+              >
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+            </div>
 
-  <script src="./scripts/like.js"></script>
-</footer>
-</body>
+            <p class="diskette-dialog__text">
+              ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ
+            </p>
+          </div>
+
+          <button class="diskette-dialog__button" type="submit">
+            <span class="button__text">OK</span>
+          </button>
+        </form>
+      </dialog>
+
+      <script src="./scripts/like.js"></script>
+    </footer>
+  </body>
 </html>
