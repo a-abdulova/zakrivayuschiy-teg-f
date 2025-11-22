@@ -115,8 +115,8 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  border: 2px solid transparent; 
-  box-sizing: border-box; 
+  border: 2px solid transparent;
+  box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
 
