@@ -1,1 +1,36 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: "Inter-Variable", sans-serif;
+  --font-size: 18px;
+  --header-logo-size: clamp(49px, calc(43.37px + 1.5vw), 65px);
+  --header-title-size: clamp(14px, calc(10.83px + 0.845vw), 23px);
+  --main-title-size-mobile: ;
+  --font-weight-body: 415;
+  --font-weight-title: 715;
+  --font-accent: "PressStart2P-Regular", sans-serif;
+  --font-size-accent: 14px;
+  --background-color: rgba(255, 255, 255, 1);
+  --page-background: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --content-width: clamp(375px, 60vw, 700px);
+  --header-min-height-desktop: 368px;
+  --header-min-height-mobile: 327px;
+  --header-padding-block: clamp(122px, calc(119.18px + 0.751vw), 130px);
+  --header-padding-inline: clamp(40px, 6vw, 80px);
+  --card-min-height-desktop: 956px;
+  --card-min-height-mobile: 758px;
+  --label-stroke-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --button-bg-color: rgba(255, 255, 255, 1); /* фон кнопки */
+  --button-text-color: rgba(255, 255, 255, 1); /* базовый цвет текста */
+  --button-fill-color: rgba(0, 0, 0, 1);
+  /* иконка сердца */
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --core-color: #fff;
+}

@@ -9,3 +9,38 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+/* ключевые кадры для вспышки сердца */
+@keyframes heart-liked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* запускаем анимацию, когда svg получает класс is-liked */
+.like-icon.is-liked .heart {
+  animation: heart-liked 0.3s ease-in 0.1s 1 both;
+}
+
+@keyframes sparks-burst {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* запускаем искры при is-liked */
+.like-icon.is-liked .sparks {
+  animation: sparks-burst 0.3s ease-in 0.3s 1 both;
+}
