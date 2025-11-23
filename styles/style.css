@@ -81,12 +81,12 @@
 }
 
 .card__content {
-  padding: 25px 25px 26px 25px;
+  padding: 25px;
   font-family: var(--font-main), Arial, sans-serif;
   font-size: var(--font-size);
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 25px;
   border-top: 2px solid #000;
   line-height: 21px;
 }
@@ -142,7 +142,7 @@
   top: 25px;
   right: 25px;
   font-family: var(--font-accent), sans-serif;
-  font-size: var(--font-size-accent), sans-serif;
+  font-size: var(--font-size-accent);
   text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -158,7 +158,7 @@
   .card__label {
     color: transparent;
     -webkit-text-stroke: 1px var(--label-stroke-color);
-    stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
     text-shadow: none;
   }
 }
@@ -250,12 +250,13 @@
   font-size: var(--font-size-accent);
   text-transform: uppercase;
   line-height: 150%;
+  letter-spacing: 0;
+  margin: 0;
 }
 
 .diskette-dialog__button {
   align-self: stretch;
   padding-block: 6px;
-  padding-inline: 24px;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   cursor: pointer;
@@ -409,7 +410,7 @@
     inline-size: 100vw;
   }
 
-  .header__inner {
+  .header {
     padding-inline: 0;
     min-height: auto;
     border-inline: none;
@@ -420,7 +421,11 @@
   }
 
   .diskette-dialog {
-    inline-size: 341px;
+    min-width: 341px;
+  }
+
+  .diskette-dialog__form {
+    padding: 30px 40px;
   }
 
   .save__button {
